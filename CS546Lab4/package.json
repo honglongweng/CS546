@@ -1,0 +1,24 @@
+{
+  "name": "cs546lab4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matttelker/CS546.git"
+  },
+  "author": "Matt Telker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matttelker/CS546/issues"
+  },
+  "homepage": "https://github.com/matttelker/CS546#readme",
+  "dependencies": {
+    "mongodb": "^2.2.23",
+    "uuid": "^3.0.1"
+  }
+}
