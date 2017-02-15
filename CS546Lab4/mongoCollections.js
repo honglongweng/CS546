@@ -1,4 +1,4 @@
-const dbConnection = require("./mongoConnection")
+const dbConnection = require("./mongoConnection");
 
 
 let getCollectionFn = (collection) => {
@@ -17,5 +17,5 @@ let getCollectionFn = (collection) => {
 
 /* Now, you can list your collections here: */
 module.exports = {
-    posts: getCollectionFn("todoItems"),
+    todoItems: getCollectionFn("todoItems")
 };
