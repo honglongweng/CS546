@@ -47,11 +47,36 @@ let exportedMethods = {
     },
 
     completeTask(taskId) {
-
+        if (!taskId) 
+            return Promise.reject("You must provide an id to complete");
+        
+        return todoItems().then((todoCollection) => {
+            let date = Date();
+            return todoCollection.update(
+                { _id: taskId },
+                { $set: 
+                    {
+                        complete: true,
+                        completedAt: date
+                    }
+                }
+            );
+        });
     },
 
     removeTask(id) {
-
+        if (!id) 
+            return Promise.reject("You must provide an id to search for");
+        
+        return todoItems().then((todoCollection) => {
+            return todoCollection
+                .removeOne({_id: id})
+                .then((deletionInfo) => {
+                    if (deletionInfo.deletedCount === 0) {
+                        return Promise.reject(`Could not delete task with id of ${id}`);
+                    }
+                });
+        });
     }
 }
 
