@@ -26,6 +26,17 @@ li a.active {
     background-color: deepskyblue;
 }
 
+h3.subtext {
+    margin-bottom: 0;
+}
+
+h5.subtext {
+    margin-top: .5em;
+}
+
+h4 {
+    text-align: center;
+}
 
 h1.abouth {
     text-align: center;
@@ -36,6 +47,7 @@ h1.abouth {
     padding: 2% 2% 2% 2%;
     border-radius: 10%;
     background-color: lightblue;
+    overflow:hidden;
 }
 
 main {
