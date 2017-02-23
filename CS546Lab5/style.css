@@ -1,0 +1,44 @@
+.header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+
+li a {
+    float: left;
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: deepskyblue;
+}
+
+
+h1.abouth {
+    text-align: center;
+    font-family: fantasy;
+}
+
+.textcontainer {
+    padding: 2% 2% 2% 2%;
+    border-radius: 10%;
+    background-color: lightblue;
+}
+
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+}
