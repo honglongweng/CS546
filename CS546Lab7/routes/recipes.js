@@ -13,3 +13,6 @@ const recipesData = data.recipes;
 router.get("/:id", (req,res) => {
     //TODO
 });
+
+
+module.exports = router;
