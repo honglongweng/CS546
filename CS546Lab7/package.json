@@ -1,0 +1,17 @@
+{
+  "name": "cs546lab7",
+  "version": "1.0.0",
+  "description": "A Recipe API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Matt Telker",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "mongodb": "^2.2.24",
+    "uuid": "^3.0.1"
+  }
+}
