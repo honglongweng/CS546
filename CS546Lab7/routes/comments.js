@@ -23,7 +23,7 @@ router.get("/:commentId", (req, res) => {
     recipesData.getComment(req.params.commentId).then((comment) => {
         res.json(comment);
     }).catch((e) => {
-        res.status(404).json({ error: e });
+        res.status(404).json({ error: "Comment not found." });
     })
 });
 
@@ -31,13 +31,18 @@ router.get("/:commentId", (req, res) => {
 router.post("/:recipeId", (req, res) => {
     let commentPostData = req.body;
     let recipeID = req.params.recipeId;
+    let getRecipe = recipesData.getRecipe(req.params.recipeId);
+    getRecipe.then(() => {
+        recipesData.addComment(recipeID, commentPostData.poster, commentPostData.comment)
+            .then((newComment) => {
+                res.json(newComment);
+            }).catch((e) => {
+                res.status(500).json({ error: e });
+            });
+    }).catch(()=>{
+        res.status(404).json({error: "Recipe not found."});
+    })
 
-    recipesData.addComment(recipeID, commentPostData.poster, commentPostData.comment)
-        .then((newComment) => {
-            res.json(newComment);
-        }).catch((e) => {
-            res.status(500).json({ error: e });
-        });
 });
 
 /* This method updates the given comment for the given recipe */
