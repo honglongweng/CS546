@@ -1,0 +1,63 @@
+/* Matt Telker
+ * CS 546
+ * Lab 8
+ */
+.header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+footer {
+    font-size: .75em;
+}
+
+li {
+    text-align: left;
+}
+
+h4 {
+    font-size: .8em;
+}
+
+h1 {
+    font-family: fantasy;
+}
+
+.textcontainer {
+    padding: 2% 2% 2% 2%;
+    border-radius: 10%;
+    background-color: lightblue;
+    overflow:hidden;
+    text-align: center;
+}
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#listContainer {
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    background-color: lightgrey;
+}
+
+.is-palindrome {
+    color: #0000FF;
+}
+
+.not-palindrome {
+    color: #FF0000;
+}
+
+#submitwrapper {
+    display: block;
+    align-content: center;
+}
