@@ -1,0 +1,13 @@
+body {
+    padding-top: 50px;
+}
+
+.hints {
+    /*fix 2 for contrast */
+    color: #767676;
+}
+
+.the-result {
+    background: #666;
+    color: #000;
+}
